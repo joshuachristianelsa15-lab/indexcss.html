@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        nav {
+            background-color: #f2f2f2; /* Warna latar belakang umum nav */
+            display: inline-block;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: block;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 15px 30px;
+            text-decoration: none;
+            text-transform: uppercase; /* Mengubah teks menjadi huruf kapital */
+            font-size: 14px;
+            font-weight: bold;
+            color: #555555; /* Warna teks default */
+            background-color: #f2f2f2; /* Warna default tombol */
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        /* Menu 'Home' (Aktif) */
+        nav ul li a.active {
+            background-color: #3caea3; /* Warna hijau toska/teal */
+            color: #ffffff; /* Warna teks putih */
+        }
+
+        /* Efek Hover / Fokus untuk menu lainnya */
+        nav ul li a:hover {
+            background-color: #4a4a4a; /* Warna abu-abu gelap */
+            color: #ffffff;
+            border-bottom: 4px solid #3caea3; /* Garis bawah toska saat hover */
+            padding-bottom: 11px; /* Menjaga tinggi agar tetap konsisten dengan border */
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+
+</body>
+</html>
